@@ -1,6 +1,6 @@
 USE tienda;
 -- 1
-SELECT nombre FROM empleado WHERE id_puesto IN (SELECT id_puesto FROM puesto WHERE salario < 10000);
+SELECT nombre FROM empleado WHERE id_puesto IN (SELECT id_puesto FROM puesto WHERE salario > 10000);
 
 -- 2
 SELECT MIN(conteo) AS conteo_minimo, MAX(conteo) AS conteo_maximo FROM 
